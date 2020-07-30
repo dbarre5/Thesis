@@ -1,0 +1,33 @@
+surface_file temp_prism0.tin
+input_file temp_prism0.uns
+output_file prism.uns
+n_processors 1
+init_dir_from_prev
+smoothing_steps 0
+first_layer_smoothing_steps 1
+blayer_2d 1
+fillet 0.1
+ortho_weight 0
+max_prism_angle 180
+min_prism_quality 0.0099999998
+tetra_smooth_limit 0.30000001
+triangle_quality laplace
+family PART_1_1_1
+family WALLS_LEFT_MOVE
+family WALLS_RIGHT_MOVE height 0.05
+family WALLS_MID_MOVE
+family WALLS_FILLET_MOVE
+family WALLS_PIPE_2 n_layers 3
+family WALLS_PIPE_MID n_layers 3
+family WALLS_PIPE_MID_RIGHT n_layers 3
+law exponential
+layers 5
+height 0
+ratio 1.2
+total_height 0
+prism_height_limit 0
+max_prism_height_ratio 0
+stair_step 1
+auto_reduction 0
+n_tetra_smoothing_steps 10
+n_triangle_smoothing_steps 5
