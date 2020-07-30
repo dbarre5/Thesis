@@ -1,0 +1,6 @@
+CSOURCES= $(SRC)Water_Hammer_BC_input_2_with_vel_stored.c
+HSOURCES=
+VERSION=2ddp_host
+PARALLEL_NODE=none
+HOST_FLAGS=-DUSE_UDF_HOST_DUMMY
+GPU_SUPPORT=off
