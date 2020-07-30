@@ -1,0 +1,6 @@
+CSOURCES= $(SRC)Water_Hammer_BC4_input.c
+HSOURCES=
+VERSION=2ddp_node
+PARALLEL_NODE=ibmmpi
+HOST_FLAGS=
+GPU_SUPPORT=off

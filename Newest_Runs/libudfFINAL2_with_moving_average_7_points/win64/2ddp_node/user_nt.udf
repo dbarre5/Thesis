@@ -1,0 +1,6 @@
+CSOURCES= $(SRC)Water_Hammer_BC_input_2_with_moving_average_7points.c
+HSOURCES=
+VERSION=2ddp_node
+PARALLEL_NODE=ibmmpi
+HOST_FLAGS=
+GPU_SUPPORT=off
