@@ -1,0 +1,156 @@
+ANSYS ICEM CFD Prism 19.1 compiled on 4/9/2018 at 8:16 p.m.
+running on Windows (64 bit version)
+(c) Copyright 1991 - 2018 Ansys Inc.
+process eng19vsanx-30 7668
+reading surface model...
+Reading surface mesh file: temp_prism0.uns...
+orient the face normals inwards:
+35684 elements reoriented
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+Writing extruded mesh uns domain file: prism.uns...
+reading mesh file...
+sizeof mesh_element 24
+sizeof element 40
+sizeof base_prism 144
+sizeof of one prism 152 bytes
+sizeof of one tet 176 bytes
+'Fix marching direction' is active: 
+    first layer smoothing steps is set to 1 
+    and directional smoothing steps is set to 0 
+max_prism_angle reset to 174.261 because the min_prism_quality is 0.01
+new volume 16
+smoothing triangles
+initializing element ratios
+beginning iteration
+iteration 1 completed (Residual 1.000000)
+iteration 2 completed (Residual 0.711092)
+iteration 3 completed (Residual 0.561656)
+iteration 4 completed (Residual 0.464688)
+iteration 5 completed (Residual 0.397916)
+smoothing tetra
+done smoothing
+marking shells
+maximum height over base ratio 0.216369 = 0.01/0.0462173 in TRI_3 ( 17687 156 155) in part WALLS_FILLET_MOVE
+306 prisms to be created on part WALLS_LEFT_MOVE
+306 prisms to be created on part WALLS_RIGHT_MOVE
+576 prisms to be created on part WALLS_MID_MOVE
+156 prisms to be created on part WALLS_FILLET_MOVE
+initializing heights
+smoothing heights
+There are prism nodes without any prescribed initial/total heights:
+    heights will be determined from the local triangle sizes.
+Smoothing prism node heights: maximum jump factor 1.446766 after 4 iterations.
+done smoothing heights
+900 verts growing 5 layers
+initializing directions from levelset norm
+900 prism_nodes
+smoothing marching directions
+900 prism_nodes
+iteration: 1 worst quality 0.392458
+final iteration: worst extruded element quality 0.392458
+completed smoothing
+extruding prism layer 1
+worst prism quality: 0.392458
+writing out prism layer 1
+done
+initializing directions from levelset norm
+900 prism_nodes
+smoothing marching directions
+900 prism_nodes
+final iteration: worst extruded element quality 0.679672
+completed smoothing
+extruding prism layer 2
+worst prism quality: 0.679672
+writing out prism layer 2
+done
+initializing directions from levelset norm
+1796 prism_nodes
+smoothing marching directions
+900 prism_nodes
+final iteration: worst extruded element quality 0.676746
+completed smoothing
+1 flat tris removed in 1 iterations
+extruding prism layer 3
+worst prism quality: 0.676746
+writing out prism layer 3
+done
+initializing directions from levelset norm
+2695 prism_nodes
+smoothing marching directions
+900 prism_nodes
+final iteration: worst extruded element quality 0.671977
+completed smoothing
+12 flat tris removed in 1 iterations
+extruding prism layer 4
+worst prism quality: 0.673307
+writing out prism layer 4
+done
+initializing directions from levelset norm
+3494 prism_nodes
+smoothing marching directions
+900 prism_nodes
+final iteration: worst extruded element quality 0.685875
+completed smoothing
+46 flat tris removed in 1 iterations
+extruding prism layer 5
+worst prism quality: 0.688723
+writing out prism layer 5
+done
+performing cleanup smoothing
+warning: deleting application data (type = 20)with base_class destructor
+22 egdes of flat inflation boundary elements removed.
+initializing element ratios
+beginning iteration
+selecting elements
+worst triangle aspect = 0.034942
+worst quad aspect = 0.073169
+130 quads/triangles selected
+273 nodes selected
+iteration 1 completed
+selecting elements
+worst triangle aspect = 0.298811
+worst quad aspect = 0.073169
+113 quads/triangles selected
+231 nodes selected
+iteration 2 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.073169
+112 quads/triangles selected
+229 nodes selected
+iteration 3 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.073169
+112 quads/triangles selected
+229 nodes selected
+iteration 4 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.073169
+112 quads/triangles selected
+229 nodes selected
+iteration 5 completed
+initializing element ratios
+beginning iteration
+iteration 1 completed (Residual 1.000000)
+iteration 2 completed (Residual 0.759081)
+iteration 3 completed (Residual 0.644929)
+iteration 4 completed (Residual 0.571712)
+iteration 5 completed (Residual 0.518461)
+writing out smoothed mesh
+done
+prism finished
