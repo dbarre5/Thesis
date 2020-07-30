@@ -1,0 +1,13 @@
+# family_boco file written by ICEM CFD by dbarre5 on Tue Apr 16 10:40:18 AM Central Daylight Time 2019
+## solver ANSYS Fluent
+"PART_1_1_1"
+"PART_1_1_1_MATPOINT"
+"INLET"
+"TOP"
+"OUTLET"
+"WALL1"
+"WALL2"
+"WALL3"
+"SOLID"
+"SOLID" "color" 3403389
+

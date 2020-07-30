@@ -1,0 +1,50 @@
+# Written by ICEM CFD 19.1, user dbarre5, Tue Apr 16 10:40:18 AM Central Daylight Time 2019
+
+begin family PART_1_1_1
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family PART_1_1_1
+
+begin family PART_1_1_1_MATPOINT
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family PART_1_1_1_MATPOINT
+
+begin family INLET
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family INLET
+
+begin family TOP
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family TOP
+
+begin family OUTLET
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family OUTLET
+
+begin family WALL1
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALL1
+
+begin family WALL2
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALL2
+
+begin family WALL3
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALL3
+
+begin family SOLID
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 3403390 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family SOLID

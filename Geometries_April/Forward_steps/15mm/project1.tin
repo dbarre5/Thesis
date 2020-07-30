@@ -1,0 +1,102 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 19.1 on Tue Apr 16 10:40:18 2019
+
+set_triangulation_tolerance 0.001
+# In ICEM CFD 4.2 the family_boco file is no longer tied to tetin
+# read_family_boco family_boco
+define_family PART_1_1_1 color 7598899
+define_family PART_1_1_1_MATPOINT color 16084531
+define_family INLET color 16663101
+define_family TOP color 14693271
+define_family OUTLET color 3387852
+define_family WALL1 color 5766195
+define_family WALL2 color 3390657
+define_family WALL3 color 6108154
+define_family SOLID color 3403389
+
+prescribed_point 0 0 0 family PART_1_1_1 name VERT4
+prescribed_point -17.716535433071 0 0 family PART_1_1_1 name VERT5
+prescribed_point -17.716535433071 17.716535433071 0 family PART_1_1_1 name VERT6
+prescribed_point 17.716535433071 17.716535433071 0 family PART_1_1_1 name VERT7
+prescribed_point 17.716535433071 0.59055118110236 0 family PART_1_1_1 name VERT14
+prescribed_point 0 0.59055118110236 0 family PART_1_1_1 name VERT15
+define_curve family WALL1 tetra_size 1e+10 name EDGE8 vertex1 VERT4 vertex2 VERT5 dscell_id 1073741825
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+-17.716535433071,0,0
+define_curve family INLET tetra_size 1e+10 name EDGE9 vertex1 VERT5 vertex2 VERT6 dscell_id 1073741826
+bspline
+2,2,0
+0,0,1,1
+-17.716535433071,0,0
+-17.716535433071,17.716535433071,0
+define_curve family TOP tetra_size 1e+10 name EDGE10 vertex1 VERT6 vertex2 VERT7 dscell_id 1073741827
+bspline
+2,2,0
+0,0,1,1
+-17.716535433071,17.716535433071,0
+17.716535433071,17.716535433071,0
+define_curve family OUTLET tetra_size 1e+10 name EDGE11 vertex1 VERT7 vertex2 VERT14 dscell_id 1073741828
+bspline
+2,2,0
+0,0,1,1
+17.716535433071,17.716535433071,0
+17.716535433071,0.59055118110236,0
+define_curve family WALL3 tetra_size 1e+10 name EDGE12 vertex1 VERT14 vertex2 VERT15 dscell_id 1073741829
+bspline
+2,2,0
+0,0,1,1
+17.716535433071,0.59055118110236,0
+0,0.59055118110236,0
+define_curve family WALL2 tetra_size 1e+10 name EDGE13 vertex1 VERT15 vertex2 VERT4 dscell_id 1073741830
+bspline
+2,2,0
+0,0,1,1
+0,0.59055118110236,0
+0,0,0
+define_surface name FACE16 family PART_1_1_1 tetra_size 1e+10 dscell_id 2147483649 orig_type 0
+trim_surface n_loops 1
+loop n_curves 6
+coedge 3dcurve   EDGE8
+polyline n_points 2
+0.60540925533895,0.5
+0.60540925533895,0.71081850906947
+coedge 3dcurve   EDGE9
+polyline n_points 2
+0.60540925533895,0.71081850906947
+0.39459074626947,0.71081850906947
+coedge 3dcurve   EDGE10
+polyline n_points 2
+0.39459074626947,0.71081850906947
+0.39459074626947,0.28918149093053
+coedge 3dcurve   EDGE11
+polyline n_points 2
+0.39459074626947,0.28918149093053
+0.5983819717033,0.28918149093053
+coedge 3dcurve   EDGE12
+polyline n_points 2
+0.5983819717033,0.28918149093053
+0.5983819717033,0.5
+coedge 3dcurve   EDGE13
+polyline n_points 2
+0.5983819717033,0.5
+0.60540925533895,0.5
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+42.018453482261,50.87672126638,0
+42.018453482261,-33.160185698143,0
+-42.018453482261,50.87672126638,0
+-42.018453482261,-33.160185698143,0
+affix 0
+define_shell n_surfaces 1 name PART_1_1_1.1 family PART_1_1_1
+FACE16 
+define_lump name PART_1_1_1 family PART_1_1_1 n_shells 1 
+PART_1_1_1.1
+define_solid body n_lumps 1 n_sheets 0 name PART_1_1_1 family PART_1_1_1_MATPOINT
+PART_1_1_1
+define_model 1e+10 reference_size 1 units in
+return
