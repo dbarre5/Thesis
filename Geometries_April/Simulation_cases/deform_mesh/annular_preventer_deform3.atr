@@ -1,0 +1,109 @@
+# Written by ICEM CFD 19.1, user dbarre5, Wed Mar 20 7:29:54 PM Central Daylight Time 2019
+
+begin family FLUID
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 7405440 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family FLUID
+
+begin family PART_00
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family PART_00
+
+begin family INLET
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family INLET
+
+begin family AXIS
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family AXIS
+
+begin family OUTLET
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family OUTLET
+
+begin family WALLS_PIPE
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_PIPE
+
+begin family WALL_RAM_MID
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALL_RAM_MID
+
+begin family WALL_RAM_LEFT
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALL_RAM_LEFT
+
+begin family WAL_RAM_RIGHT
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WAL_RAM_RIGHT
+
+begin family WALL_RAM_MOVE
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALL_RAM_MOVE
+
+begin family WALL_RAM_DEFORM
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALL_RAM_DEFORM
+
+begin family FLUID_STATIONARY
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 4747260 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family FLUID_STATIONARY

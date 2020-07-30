@@ -1,0 +1,66 @@
+no need to use topo thin
+Octree mesh sizes will be 2^(+/-n) multiples of the seed size: 0.100000 , caused by curve crv.07
+1 processes
+about to subdivide
+10,000 tetrahedra
+20,000 tetrahedra
+30,000 tetrahedra
+30822 cells after required subdivision
+slow transition
+34858 cells after balanced subdivision
+40,000 tetrahedra
+rounding points to prescribed points
+updating node connections
+computing diameters
+rounding vertices to curves and surfaces
+updating node connections
+trilateral round to curve
+7 edges swapped
+0 edges swapped
+updating node connections
+bilateral round to surface
+updating node connections
+splitting edges at curves
+splitting edges at surfaces
+971 edges swapped
+19 edges swapped
+3 edges swapped
+0 edges swapped
+splitting faces at curves
+merging mid points
+merging face points
+splitting extra edges
+1296 split edges
+21 split faces
+subdividing based on split edges and faces
+updating node connections
+splitting edges at curves
+splitting edges at surfaces
+0 edges swapped
+splitting faces at curves
+0 split edges
+0 split faces
+swapping edges
+running cutter
+computing opaque faces
+adding missing faces
+0 faces added
+Adding new material point ORFN/-1 outside object at (15.6338 3.95875 -0.0525006)
+determining material point containment
+Performing flood fill
+45713 elements marked in ORFN
+family FLUID has 3372 internal faces and 0 boundary faces
+but is not marked as internal_wall
+going back 1 steps on path
+Adding new material point CREATED_MATERIAL_12.1 inside object (10.875 -0.2425 0.063749)
+re-doing flood fill
+material point CREATED_MATERIAL_12.1 can reach material point ORFN/-1
+check display
+45713 elements unmarked
+0 elements remarked in part CREATED_MATERIAL_12
+45713 elements marked in CREATED_MATERIAL_12
+45713 element(s) are in part CREATED_MATERIAL_12
+computing bar elements
+disconnecting orphan cells
+the number of uncut domain tetras matches to the number of cut domain tetras: cutter failed.
+cutter failed: no cut domain was generated

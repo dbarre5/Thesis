@@ -1,0 +1,264 @@
+ANSYS ICEM CFD Prism 19.1 compiled on 4/9/2018 at 8:16 p.m.
+running on Windows (64 bit version)
+(c) Copyright 1991 - 2018 Ansys Inc.
+process eng19vsanx-27 2292
+reading surface model...
+Reading surface mesh file: temp_prism0.uns...
+orient the face normals inwards:
+14619 elements reoriented
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+illegal minms in unstruct_sub
+Writing extruded mesh uns domain file: prism.uns...
+reading mesh file...
+sizeof mesh_element 24
+sizeof element 40
+sizeof base_prism 144
+sizeof of one prism 152 bytes
+sizeof of one tet 176 bytes
+max_prism_angle reset to 174.261 because the min_prism_quality is 0.01
+WARNING: prism number of layers 8 set on family WAL_RAM_RIGHT overrides global num layers 3.
+WARNING: prism number of layers 8 set on family WALL_RAM_LEFT overrides global num layers 3.
+WARNING: prism number of layers 8 set on family WALL_RAM_MID overrides global num layers 3.
+new volume 12
+smoothing triangles
+initializing element ratios
+beginning iteration
+selecting elements
+worst triangle aspect = 0.627609
+654 quads/triangles selected
+440 nodes selected
+iteration 1 completed
+selecting elements
+worst triangle aspect = 0.726349
+653 quads/triangles selected
+440 nodes selected
+iteration 2 completed
+selecting elements
+worst triangle aspect = 0.726488
+653 quads/triangles selected
+440 nodes selected
+iteration 3 completed
+selecting elements
+worst triangle aspect = 0.749651
+653 quads/triangles selected
+440 nodes selected
+iteration 4 completed
+selecting elements
+worst triangle aspect = 0.750398
+653 quads/triangles selected
+440 nodes selected
+iteration 5 completed
+smoothing tetra
+done smoothing
+marking shells
+maximum height over base ratio 0.227198 = 0.025/0.110036 in TRI_3 ( 8236 9364 9366) in part WALL_RAM_LEFT
+258 prisms to be created on part WALL_RAM_MID
+198 prisms to be created on part WALL_RAM_LEFT
+198 prisms to be created on part WAL_RAM_RIGHT
+initializing heights
+smoothing heights
+440 verts growing 8 layers
+initializing directions from levelset norm
+440 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst quality 0.499669
+iteration: 2 worst quality 0.499669
+iteration: 3 worst quality 0.499669
+iteration: 4 worst quality 0.499669
+iteration: 5 worst quality 0.499669
+iteration: 6 worst quality 0.499669
+iteration: 7 worst quality 0.499669
+final iteration: worst extruded element quality 0.499669
+completed smoothing
+extruding prism layer 1
+worst prism quality: 0.499669
+writing out prism layer 1
+done
+initializing directions from levelset norm
+440 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst quality 0.530455
+iteration: 2 worst quality 0.53592
+iteration: 3 worst quality 0.536012
+iteration: 4 worst quality 0.536016
+iteration: 5 worst quality 0.536017
+iteration: 6 worst quality 0.53632
+iteration: 7 worst quality 0.536434
+iteration: 8 worst quality 0.536439
+iteration: 9 worst quality 0.536439
+final iteration: worst extruded element quality 0.536439
+completed smoothing
+extruding prism layer 2
+worst prism quality: 0.536439
+writing out prism layer 2
+done
+initializing directions from levelset norm
+880 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst quality 0.567567
+iteration: 2 worst quality 0.577449
+iteration: 3 worst quality 0.577452
+iteration: 4 worst quality 0.577452
+iteration: 5 worst quality 0.577452
+iteration: 6 worst quality 0.577452
+iteration: 7 worst quality 0.577452
+final iteration: worst extruded element quality 0.577452
+completed smoothing
+1 flat tris removed in 1 iterations
+extruding prism layer 3
+worst prism quality: 0.577452
+writing out prism layer 3
+done
+initializing directions from levelset norm
+1320 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst quality 0.598871
+iteration: 2 worst quality 0.611033
+iteration: 3 worst quality 0.611033
+iteration: 4 worst quality 0.611037
+iteration: 5 worst quality 0.611045
+iteration: 6 worst quality 0.611047
+iteration: 7 worst quality 0.611048
+iteration: 8 worst quality 0.611048
+iteration: 9 worst quality 0.611048
+final iteration: worst extruded element quality 0.611048
+completed smoothing
+extruding prism layer 4
+worst prism quality: 0.611048
+writing out prism layer 4
+done
+initializing directions from levelset norm
+1755 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst quality 0.362441
+iteration: 2 worst quality 0.516442
+iteration: 3 worst quality 0.640606
+iteration: 4 worst quality 0.640606
+iteration: 5 worst quality 0.640606
+iteration: 6 worst quality 0.640606
+iteration: 7 worst quality 0.640606
+final iteration: worst extruded element quality 0.640606
+completed smoothing
+5 flat tris removed in 1 iterations
+extruding prism layer 5
+worst prism quality: 0.640606
+writing out prism layer 5
+done
+initializing directions from levelset norm
+2187 prism_nodes
+smoothing marching directions
+440 prism_nodes
+iteration: 1 worst collapse time: 0.159193 (2 bad nodes) 16255 16274
+iteration: 2 worst quality 0.484464
+iteration: 3 worst quality 0.501408
+iteration: 4 worst quality 0.620231
+iteration: 5 worst quality 0.63583
+iteration: 6 worst quality 0.666603
+iteration: 7 worst quality 0.666603
+final iteration: worst extruded element quality 0.666603
+completed smoothing
+13 flat tris removed in 1 iterations
+extruding prism layer 6
+worst prism quality: 0.666603
+writing out prism layer 6
+done
+initializing directions from levelset norm
+2570 prism_nodes
+degenerate vertex 16318 at (22.244705, 6.491314, 0.611197) because of there was no possible offset from the node:
+smoothing marching directions
+439 prism_nodes
+iteration: 1 worst quality 0.626341
+iteration: 2 worst quality 0.626677
+iteration: 3 worst quality 0.626677
+iteration: 4 worst quality 0.626677
+iteration: 5 worst quality 0.626677
+iteration: 6 worst quality 0.626677
+iteration: 7 worst quality 0.626677
+final iteration: worst extruded element quality 0.626677
+completed smoothing
+1 flat tris removed in 1 iterations
+extruding prism layer 7
+1 node columns stopped during extrusion because there was no possible offset from the node
+worst prism quality: 0.664904
+worst pyramid quality: 0.626677
+writing out prism layer 7
+done
+initializing directions from levelset norm
+2983 prism_nodes
+smoothing marching directions
+435 prism_nodes
+iteration: 1 worst quality 0.60545
+iteration: 2 worst quality 0.60545
+iteration: 3 worst quality 0.60545
+iteration: 4 worst quality 0.60545
+iteration: 5 worst quality 0.60545
+iteration: 6 worst quality 0.60545
+iteration: 7 worst quality 0.60545
+final iteration: worst extruded element quality 0.60545
+completed smoothing
+2 flat tris removed in 1 iterations
+extruding prism layer 8
+degenerate vertex 16239 at (22.312304, 10.374037, 0.606655) because of of collisions:
+1 node columns stopped during extrusion because of collisions
+worst prism quality: 0.682203
+worst pyramid quality: 0.60545
+writing out prism layer 8
+done
+performing cleanup smoothing
+warning: deleting application data (type = 20)with base_class destructor
+22 egdes of flat inflation boundary elements removed.
+initializing element ratios
+beginning iteration
+selecting elements
+worst triangle aspect = 0.033754
+worst quad aspect = 0.069934
+111 quads/triangles selected
+260 nodes selected
+iteration 1 completed
+selecting elements
+worst triangle aspect = 0.238869
+worst quad aspect = 0.069934
+89 quads/triangles selected
+207 nodes selected
+iteration 2 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.069934
+87 quads/triangles selected
+202 nodes selected
+iteration 3 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.069934
+87 quads/triangles selected
+202 nodes selected
+iteration 4 completed
+selecting elements
+worst triangle aspect > 0.300000
+worst quad aspect = 0.069934
+87 quads/triangles selected
+203 nodes selected
+iteration 5 completed
+initializing element ratios
+beginning iteration
+iteration 1 completed (Residual 1.000000)
+iteration 2 completed (Residual 0.827314)
+iteration 3 completed (Residual 0.711058)
+iteration 4 completed (Residual 0.648621)
+iteration 5 completed (Residual 0.603867)
+writing out smoothed mesh
+done
+prism finished

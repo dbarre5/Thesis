@@ -1,0 +1,233 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 19.1 on Sun Mar 17 17:10:03 2019
+
+set_triangulation_tolerance 0.001
+# In ICEM CFD 4.2 the family_boco file is no longer tied to tetin
+# read_family_boco family_boco
+define_family AXIS prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 6944563
+define_family INLET prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 16663101
+define_family OUTLET prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 3387852
+define_family WALL_LEFT_RAM prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 7795251
+define_family WALL_MID_RAM prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 5714940
+define_family WALL_RIGHT_RAM prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 15824947
+define_family WALL_OUTER_RAM prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 3398303
+define_family WALL_DEFORMING prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 4210430
+define_family WALL_PIPE prism 0 tetra_size 0.5 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 4210430
+define_family FLUID prism 0 tetra_size 0.5 height 0 hratio 0 nlay 0 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 12109107
+define_family PART_00 color 6551859
+
+prescribed_point 0 5 0 family PART_00 name PART_00.80
+prescribed_point 0 0 0 family PART_00 name PART_00.81
+prescribed_point 12 0 0 family PART_00 name PART_00.82
+prescribed_point 12 5 0 family FLUID name FLUID.82
+prescribed_point 14 5 0 family FLUID name FLUID.83
+prescribed_point 14 0 0 family FLUID name FLUID.84
+prescribed_point 14 10.5 0 family PART_00 name PART_00.84
+prescribed_point 12 10.5 0 family PART_00 name PART_00.85
+prescribed_point 22 0 0 family PART_00 name PART_00.86
+prescribed_point 22 5 0 family FLUID name FLUID.86
+prescribed_point 22 10.5 0 family PART_00 name PART_00.87
+prescribed_point 24 5 0 family FLUID name FLUID.87
+prescribed_point 24 10.5 0 family PART_00 name PART_00.88
+prescribed_point 24 0 0 family FLUID name FLUID.88
+prescribed_point 36 5 0 family PART_00 name PART_00.89
+prescribed_point 36 0 0 family PART_00 name PART_00.90
+define_curve family PART_00 tetra_size 0.5 name crv.00 vertex1 PART_00.80 vertex2 PART_00.81
+bspline
+2,2,0
+0,0,1,1
+0,5,0
+0,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.01 vertex1 PART_00.81 vertex2 PART_00.82
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+12,0,0
+define_curve family FLUID tetra_size 0.5 name crv.02 vertex1 PART_00.82 vertex2 FLUID.82
+bspline
+2,2,0
+0,0,1,1
+12,0,0
+12,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.03 vertex1 FLUID.82 vertex2 PART_00.80
+bspline
+2,2,0
+0,0,1,1
+12,5,0
+0,5,0
+define_curve family FLUID tetra_size 0.5 name crv.04 vertex1 FLUID.82 vertex2 FLUID.83
+bspline
+2,2,0
+0,0,1,1
+12,5,0
+14,5,0
+define_curve family FLUID tetra_size 0.5 name crv.05 vertex1 FLUID.83 vertex2 FLUID.84
+bspline
+2,2,0
+0,0,1,1
+14,5,0
+14,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.06 vertex1 FLUID.84 vertex2 PART_00.82
+bspline
+2,2,0
+0,0,1,1
+14,0,0
+12,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.07 vertex1 FLUID.83 vertex2 PART_00.84
+bspline
+2,2,0
+0,0,1,1
+14,5,0
+14,10.5,0
+define_curve family PART_00 tetra_size 0.5 name crv.08 vertex1 PART_00.84 vertex2 PART_00.85
+bspline
+2,2,0
+0,0,1,1
+14,10.5,0
+12,10.5,0
+define_curve family PART_00 tetra_size 0.5 name crv.09 vertex1 PART_00.85 vertex2 FLUID.82
+bspline
+2,2,0
+0,0,1,1
+12,10.5,0
+12,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.10 vertex1 FLUID.84 vertex2 PART_00.86
+bspline
+2,2,0
+0,0,1,1
+14,0,0
+22,0,0
+define_curve family FLUID tetra_size 0.5 name crv.11 vertex1 PART_00.86 vertex2 FLUID.86
+bspline
+2,2,0
+0,0,1,1
+22,0,0
+22,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.12 vertex1 FLUID.86 vertex2 FLUID.83
+bspline
+2,2,0
+0,0,1,1
+22,5,0
+14,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.13 vertex1 PART_00.87 vertex2 FLUID.86
+bspline
+2,2,0
+0,0,1,1
+22,10.5,0
+22,5,0
+define_curve family FLUID tetra_size 0.5 name crv.14 vertex1 FLUID.86 vertex2 FLUID.87
+bspline
+2,2,0
+0,0,1,1
+22,5,0
+24,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.15 vertex1 FLUID.87 vertex2 PART_00.88
+bspline
+2,2,0
+0,0,1,1
+24,5,0
+24,10.5,0
+define_curve family PART_00 tetra_size 0.5 name crv.16 vertex1 PART_00.88 vertex2 PART_00.87
+bspline
+2,2,0
+0,0,1,1
+24,10.5,0
+22,10.5,0
+define_curve family FLUID tetra_size 0.5 name crv.17 vertex1 FLUID.87 vertex2 FLUID.88
+bspline
+2,2,0
+0,0,1,1
+24,5,0
+24,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.18 vertex1 FLUID.88 vertex2 PART_00.86
+bspline
+2,2,0
+0,0,1,1
+24,0,0
+22,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.19 vertex1 FLUID.87 vertex2 PART_00.89
+bspline
+2,2,0
+0,0,1,1
+24,5,0
+36,5,0
+define_curve family PART_00 tetra_size 0.5 name crv.20 vertex1 PART_00.89 vertex2 PART_00.90
+bspline
+2,2,0
+0,0,1,1
+36,5,0
+36,0,0
+define_curve family PART_00 tetra_size 0.5 name crv.21 vertex1 PART_00.90 vertex2 FLUID.88
+bspline
+2,2,0
+0,0,1,1
+36,0,0
+24,0,0
+define_surface name srf.00 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+0,5,0
+0,0,0
+12,5,0
+12,0,0
+define_surface name srf.01 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+14,5,0
+14,0,0
+12,5,0
+12,0,0
+define_surface name srf.02 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+12,5,0
+14,5,0
+12,10.5,0
+14,10.5,0
+define_surface name srf.03 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+14,5,0
+14,0,0
+22,5,0
+22,0,0
+define_surface name srf.04 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+22,5,0
+24,5,0
+22,10.5,0
+24,10.5,0
+define_surface name srf.05 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+24,5,0
+24,0,0
+22,5,0
+22,0,0
+define_surface name srf.06 family FLUID tetra_size 0.5 mesh_type tris
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+36,5,0
+36,0,0
+24,5,0
+24,0,0
+affix 0
+define_model 1e+10 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

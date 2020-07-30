@@ -1,0 +1,17 @@
+# family_boco file written by ICEM CFD by dbarre5 on Mon Mar 25 6:48:26 PM Central Daylight Time 2019
+## solver ANSYS Fluent
+"PART_1_1_1"
+"PART_1_1_1_MATPOINT"
+"WALLS_DEFORM"
+"WALLS_TOP_MOVE"
+"WALLS_LEFT_MOVE"
+"WALLS_RIGHT_MOVE"
+"WALLS_MID_MOVE"
+"WALLS_FILLET_MOVE"
+"WALLS_PIPE"
+"WALLS_PIPE_FILLET"
+"WALLS_PIPE_2"
+"INLET"
+"OUTLET"
+"FLUID"
+

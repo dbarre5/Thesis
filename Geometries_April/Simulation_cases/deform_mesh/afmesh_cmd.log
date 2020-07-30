@@ -1,0 +1,10 @@
+"C:\PROGRA~1\ANSYSI~1\v191\icemcfd\WIN64_~1\icemcfd\"uns2fro.exe -pafmesh_parm0.tmp -fCREATED_MATERIAL_12 -e1.2  afmesh_temp0.uns af_tmp.fro
+reading domain file afmesh_temp0.uns
+Number Surface Nodes    = 1977
+Number Surface Faces    = 3372
+finding edges
+ERROR:can't build closed shells with single edges
+Single Edges       = 580
+Double Edges       = 62
+Non-manifold Edges = 0
+status 1

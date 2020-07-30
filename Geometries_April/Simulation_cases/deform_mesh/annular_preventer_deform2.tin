@@ -1,0 +1,424 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 19.1 on Sun Mar 17 17:10:03 2019
+// written by ICEM CFD - version 19.1 on Sun Mar 17 17:20:10 2019
+// written by ICEM CFD - version 19.1 on Mon Mar 18 16:21:40 2019
+// written by ICEM CFD - version 19.1 on Mon Mar 18 17:36:03 2019
+// written by ICEM CFD - version 19.1 on Mon Mar 18 17:37:42 2019
+// written by ICEM CFD - version 19.1 on Mon Mar 18 18:04:21 2019
+
+set_triangulation_tolerance 0.001
+define_family FLUID prism 1 tetra_size 0.0 height 0.05 hratio 1.1 nlay 6 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 12109107
+define_family PART_00 color 6551859
+define_family INLET color 16663101
+define_family AXIS color 6944563
+define_family OUTLET color 3387852
+define_family WALLS_PIPE prism 0 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 5125117
+define_family WALL_RAM_MID prism 1 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 height 0.05 hratio 1.1 nlay 6 color 3394737
+define_family WALL_RAM_LEFT prism 1 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 height 0.05 hratio 1.1 nlay 6 color 3389127
+define_family WAL_RAM_RIGHT prism 1 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 height 0.05 hratio 1.1 nlay 6 color 9384933
+define_family WALL_RAM_MOVE prism 0 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 height 0 hratio 0 nlay 0 color 3396520
+define_family WALL_RAM_DEFORM prism 0 tetra_size 0.2 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 height 0.1 hratio 0 nlay 0 color 3396520
+define_family FLUID_STATIONARY color 16593747
+
+prescribed_point 0 5 0 family FLUID name FLUID.90 height 0.050000001 height_ratio 1.1
+prescribed_point 0 0 0 family FLUID name FLUID.91 height 0.050000001 height_ratio 1.1
+prescribed_point 12 10.5 0 family FLUID name FLUID.92 height 0.050000001 height_ratio 1.1
+prescribed_point 14 10.5 0 family FLUID name FLUID.93 height 0.050000001 height_ratio 1.1
+prescribed_point 12 5 0 family FLUID name FLUID.94 height 0.050000001 height_ratio 1.1
+prescribed_point 14 5 0 family FLUID name FLUID.95 height 0.050000001 height_ratio 1.1
+prescribed_point 22 5 0 family FLUID name FLUID.96 height 0.050000001 height_ratio 1.1
+prescribed_point 22 10.5 0 family FLUID name FLUID.97 height 0.050000001 height_ratio 1.1
+prescribed_point 24 10.5 0 family FLUID name FLUID.98 height 0.050000001 height_ratio 1.1
+prescribed_point 24 5 0 family FLUID name FLUID.99 height 0.050000001 height_ratio 1.1
+prescribed_point 36 5 0 family FLUID name FLUID.100 height 0.050000001 height_ratio 1.1
+prescribed_point 36 0 0 family FLUID name FLUID.101 height 0.050000001 height_ratio 1.1
+prescribed_point 12 0 0 family PART_00 name PART_00.104
+prescribed_point 14 0 0 family PART_00 name PART_00.107
+prescribed_point 22 0 0 family PART_00 name PART_00.116
+prescribed_point 24 0 0 family PART_00 name PART_00.125
+define_curve family INLET tetra_size 0.5 name crv.00 vertex1 FLUID.90 vertex2 FLUID.91
+bspline
+2,2,0
+0,0,1,1
+0,5,0
+0,0,0
+define_curve family AXIS tetra_size 0.5 name crv.01 vertex1 FLUID.91 vertex2 PART_00.104
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+12,0,0
+define_curve family WALLS_PIPE tetra_size 0.2 name crv.03 vertex1 FLUID.94 vertex2 FLUID.90
+bspline
+2,2,0
+0,0,1,1
+12,5,0
+0,5,0
+define_curve family AXIS tetra_size 0.5 name crv.06 vertex1 PART_00.107 vertex2 PART_00.104
+bspline
+2,2,0
+0,0,1,1
+14,0,0
+12,0,0
+define_curve height 0.050000001 size_ratio 1.1 height_ratio 1.1 nlayers 6 family WALL_RAM_LEFT tetra_size 0.2 name crv.07 vertex1 FLUID.95 vertex2 FLUID.93
+bspline
+2,2,0
+0,0,1,1
+14,5,0
+14,10.5,0
+define_curve family WALL_RAM_MOVE tetra_size 0.2 name crv.08 vertex1 FLUID.93 vertex2 FLUID.92
+bspline
+2,2,0
+0,0,1,1
+14,10.5,0
+12,10.5,0
+define_curve height 0.1 family WALL_RAM_DEFORM tetra_size 0.2 name crv.09 vertex1 FLUID.92 vertex2 FLUID.94
+bspline
+2,2,0
+0,0,1,1
+12,10.5,0
+12,5,0
+define_curve family AXIS tetra_size 0.5 name crv.10 vertex1 PART_00.107 vertex2 PART_00.116
+bspline
+2,2,0
+0,0,1,1
+14,0,0
+22,0,0
+define_curve height 0.050000001 size_ratio 1.1 height_ratio 1.1 nlayers 6 family WALL_RAM_MID tetra_size 0.2 name crv.12 vertex1 FLUID.96 vertex2 FLUID.95
+bspline
+2,2,0
+0,0,1,1
+22,5,0
+14,5,0
+define_curve height 0.050000001 size_ratio 1.1 height_ratio 1.1 nlayers 6 family WAL_RAM_RIGHT tetra_size 0.2 name crv.13 vertex1 FLUID.97 vertex2 FLUID.96
+bspline
+2,2,0
+0,0,1,1
+22,10.5,0
+22,5,0
+define_curve height 0.1 family WALL_RAM_DEFORM tetra_size 0.2 name crv.15 vertex1 FLUID.99 vertex2 FLUID.98
+bspline
+2,2,0
+0,0,1,1
+24,5,0
+24,10.5,0
+define_curve family WALL_RAM_MOVE tetra_size 0.2 name crv.16 vertex1 FLUID.98 vertex2 FLUID.97
+bspline
+2,2,0
+0,0,1,1
+24,10.5,0
+22,10.5,0
+define_curve family AXIS tetra_size 0.5 name crv.18 vertex1 PART_00.125 vertex2 PART_00.116
+bspline
+2,2,0
+0,0,1,1
+24,0,0
+22,0,0
+define_curve family WALLS_PIPE tetra_size 0.2 name crv.19 vertex1 FLUID.99 vertex2 FLUID.100
+bspline
+2,2,0
+0,0,1,1
+24,5,0
+36,5,0
+define_curve family OUTLET tetra_size 0.5 name crv.20 vertex1 FLUID.100 vertex2 FLUID.101
+bspline
+2,2,0
+0,0,1,1
+36,5,0
+36,0,0
+define_curve family AXIS tetra_size 0.5 name crv.21 vertex1 FLUID.101 vertex2 PART_00.125
+bspline
+2,2,0
+0,0,1,1
+36,0,0
+24,0,0
+define_surface height 0.050000001 height_ratio 1.1 nlayers 6 name srf.00.9 family FLUID tetra_size 1e+10 mesh_type tris mesh_method patch_independent
+trim_surface n_loops 1
+loop n_curves 16
+coedge 3dcurve   crv.00
+null_pcurve
+coedge 3dcurve   crv.01
+null_pcurve
+coedge 3dcurve - crv.06
+null_pcurve
+coedge 3dcurve   crv.10
+null_pcurve
+coedge 3dcurve - crv.18
+null_pcurve
+coedge 3dcurve - crv.21
+null_pcurve
+coedge 3dcurve - crv.20
+null_pcurve
+coedge 3dcurve - crv.19
+null_pcurve
+coedge 3dcurve   crv.15
+null_pcurve
+coedge 3dcurve   crv.16
+null_pcurve
+coedge 3dcurve   crv.13
+null_pcurve
+coedge 3dcurve   crv.12
+null_pcurve
+coedge 3dcurve   crv.07
+null_pcurve
+coedge 3dcurve   crv.08
+null_pcurve
+coedge 3dcurve   crv.09
+null_pcurve
+coedge 3dcurve   crv.03
+null_pcurve
+unstruct_mesh n_points 88 n_triangles 126
+0 5 0
+0 3.5 0
+3.5999999 3.5 0
+3.5999999 5 0
+8.3999996 3.5 0
+8.3999996 5 0
+12 3.5 0
+0 1.5 0
+3.5999999 1.5 0
+8.3999996 1.5 0
+12 1.5 0
+0 0 0
+3.5999999 0 0
+8.3999996 0 0
+12 6.6500001 0
+12.6 8.8500004 0
+12 8.8500004 0
+12 10.5 0
+13.4 5 0
+12.6 6.6500001 0
+13.4 6.6500001 0
+13.4 8.8500004 0
+13.4 10.5 0
+12.6 10.5 0
+14 6.6500001 0
+14 8.8500004 0
+14 10.5 0
+12.6 3.5 0
+12.6 5 0
+12 5 0
+13.4 3.5 0
+12.6 1.5 0
+14 0 0
+13.4 0 0
+13.4 1.5 0
+12.6 0 0
+12 0 0
+14 5 0
+16.4 5 0
+19.6 5 0
+22 5 0
+14 3.5 0
+14 1.5 0
+16.4 3.5 0
+19.6 3.5 0
+16.4 1.5 0
+16.4 0 0
+19.6 1.5 0
+19.6 0 0
+22.6 6.6500001 0
+22 6.6500001 0
+22 8.8500004 0
+22.6 10.5 0
+22 10.5 0
+22.6 8.8500004 0
+24 6.6500001 0
+23.4 6.6500001 0
+23.4 8.8500004 0
+24 8.8500004 0
+24 10.5 0
+23.4 10.5 0
+24 5 0
+23.4 5 0
+22.6 3.5 0
+22.6 5 0
+22 3.5 0
+24 3.5 0
+23.4 1.5 0
+23.4 3.5 0
+22.6 1.5 0
+22 1.5 0
+23.4 0 0
+22.6 0 0
+22 0 0
+36 5 0
+32.400002 5 0
+32.400002 3.5 0
+27.6 5 0
+36 3.5 0
+32.400002 1.5 0
+27.6 1.5 0
+27.6 3.5 0
+24 1.5 0
+36 0 0
+36 1.5 0
+32.400002 0 0
+27.6 0 0
+24 0 0
+0 1 2
+0 2 3
+3 2 4
+3 4 5
+5 4 6
+5 6 29
+1 7 8
+1 8 2
+2 8 9
+2 9 4
+4 9 10
+4 10 6
+7 11 12
+7 12 8
+8 12 13
+8 13 9
+9 13 36
+9 36 10
+29 28 19
+29 19 14
+14 19 15
+14 15 16
+16 15 23
+16 23 17
+28 18 20
+28 20 19
+19 20 21
+19 21 15
+15 21 22
+15 22 23
+18 37 24
+18 24 20
+20 24 25
+20 25 21
+21 25 26
+21 26 22
+37 41 30
+37 30 18
+18 30 27
+18 27 28
+28 27 6
+28 6 29
+41 42 34
+41 34 30
+30 34 31
+30 31 27
+27 31 10
+27 10 6
+42 32 33
+42 33 34
+34 33 35
+34 35 31
+31 35 36
+31 36 10
+37 41 43
+37 43 38
+38 43 44
+38 44 39
+39 44 65
+39 65 40
+41 42 45
+41 45 43
+43 45 47
+43 47 44
+44 47 70
+44 70 65
+42 32 46
+42 46 45
+45 46 48
+45 48 47
+47 48 73
+47 73 70
+40 64 49
+40 49 50
+50 49 54
+50 54 51
+51 54 52
+51 52 53
+64 62 56
+64 56 49
+49 56 57
+49 57 54
+54 57 60
+54 60 52
+62 61 55
+62 55 56
+56 55 58
+56 58 57
+57 58 59
+57 59 60
+61 66 68
+61 68 62
+62 68 63
+62 63 64
+64 63 65
+64 65 40
+66 82 67
+66 67 68
+68 67 69
+68 69 63
+63 69 70
+63 70 65
+82 87 71
+82 71 67
+67 71 72
+67 72 69
+69 72 73
+69 73 70
+74 78 76
+74 76 75
+75 76 81
+75 81 77
+77 81 66
+77 66 61
+78 84 79
+78 79 76
+76 79 80
+76 80 81
+81 80 82
+81 82 66
+84 83 85
+84 85 79
+79 85 86
+79 86 80
+80 86 87
+80 87 82
+affix 0
+define_model 1e+10 reference_size 1
+global_meshing_parameter quadratic "0"
+global_meshing_parameter snorm "1"
+global_meshing_parameter shrinkwrap_projfactor "0.1"
+global_meshing_parameter shrinkwrap_nsmooth "5"
+global_meshing_parameter free_bunch "0"
+global_meshing_parameter mapped_method "1"
+global_meshing_parameter merge_surfs "1"
+global_meshing_parameter max_elements "0"
+global_meshing_parameter max_nodes "0"
+global_meshing_parameter min_angle "0.0"
+global_meshing_parameter max_length "0.0"
+global_meshing_parameter max_area "0.0"
+global_meshing_parameter smooth_dormant "0"
+global_meshing_parameter mesh_dormant "0"
+global_meshing_parameter impr_level "1"
+global_meshing_parameter try_harder "1"
+global_meshing_parameter ign_size "0.02"
+global_meshing_parameter surf_sizes "0"
+global_meshing_parameter proj_surf "1"
+global_meshing_parameter adjust_nodes_max "0.0"
+global_meshing_parameter block_mapping "0.2"
+global_meshing_parameter bound_smooth "0"
+global_meshing_parameter protect_line "0"
+global_meshing_parameter bunch_respect "0"
+global_meshing_parameter simple_offset "0"
+global_meshing_parameter mesh_method "2"
+global_meshing_parameter mesh_type "0"
+global_meshing_parameter triangle_quality "inscribed_area"
+global_meshing_parameter tgrid_max_cell_skew "0.90"
+global_meshing_parameter tgrid_max_cap_skew "0.98"
+global_meshing_parameter tgrid_smoothing_level "0"
+global_meshing_parameter tgrid_enhance_offset_comp "0"
+global_meshing_parameter tgrid_enhance_norm_comp "0"
+global_meshing_parameter tgrid_gap_factor "0.5"
+global_meshing_parameter tgrid_fix_first_layer "0"
+global_meshing_parameter tgrid_n_ortho_layers "0"
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

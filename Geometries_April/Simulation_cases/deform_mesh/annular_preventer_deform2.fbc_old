@@ -1,0 +1,25 @@
+# family_boco file written by ICEM CFD by dbarre5 on Mon Mar 18 6:04:21 PM Central Daylight Time 2019
+## solver ANSYS Fluent
+"FLUID"
+"FLUID" "color" 16663900
+"PART_00"
+"PART_00" "color" 16663900
+"INLET"
+"INLET" "color" 16663900
+"AXIS"
+"AXIS" "color" 16663900
+"OUTLET"
+"OUTLET" "color" 16663900
+"WALLS_PIPE"
+"WALLS_PIPE" "color" 16663900
+"WALL_RAM_MID"
+"WALL_RAM_MID" "color" 16663900
+"WALL_RAM_LEFT"
+"WALL_RAM_LEFT" "color" 16663900
+"WAL_RAM_RIGHT"
+"WAL_RAM_RIGHT" "color" 16663900
+"WALL_RAM_MOVE"
+"WALL_RAM_MOVE" "color" 16663900
+"WALL_RAM_DEFORM"
+"WALL_RAM_DEFORM" "color" 16663900
+"FLUID_STATIONARY"
