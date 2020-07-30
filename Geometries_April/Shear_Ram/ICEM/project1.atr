@@ -1,0 +1,120 @@
+# Written by ICEM CFD 19.1, user dbarre5, Wed Apr 17 10:54:20 AM Central Daylight Time 2019
+
+begin family FLUIDDOMAIN2-FREEPARTS_1_1
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 0 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family FLUIDDOMAIN2-FREEPARTS_1_1
+
+begin family FLUIDDOMAIN2-FREEPARTS_1_1_MATPOINT
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family FLUIDDOMAIN2-FREEPARTS_1_1_MATPOINT
+
+begin family WALLS_ANNULUS
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 63771 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_ANNULUS
+
+begin family WALLS_PIPE
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 32262 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_PIPE
+
+begin family WALLS_STATIONARY_FILLET
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALLS_STATIONARY_FILLET
+
+begin family WALLS_DEFORM_FILLET
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 15371400 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_DEFORM_FILLET
+
+begin family WALLS_DEFORM_SIDES
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 13782700 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_DEFORM_SIDES
+
+begin family WALLS_DEFORM_TOP_BOT
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16515200 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_DEFORM_TOP_BOT
+
+begin family OUTLET
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 204 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family OUTLET
+
+begin family INLET
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 16646200 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family INLET
+
+begin family WALLS_MOVING_POSY
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 2980810 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_MOVING_POSY
+
+begin family WALLS_MOVING_NEGY
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 163830 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_MOVING_NEGY
+
+begin family WALLS_MOVING_POSY_SMALL
+    begin solver "ANSYS Fluent"
+        begin bctype color
+            active 1
+            color 2980810 1
+        end bctype color
+    end solver "ANSYS Fluent"
+end family WALLS_MOVING_POSY_SMALL
+
+begin family WALLS_STATIONARY_FILLET_SMALL
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALLS_STATIONARY_FILLET_SMALL
+
+begin family AVERAGED_ZONE
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family AVERAGED_ZONE
